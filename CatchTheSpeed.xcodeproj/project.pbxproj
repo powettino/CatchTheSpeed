@@ -1,0 +1,1123 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D00AB771B741FFB00DDD8CE /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D00AB711B741FFB00DDD8CE /* Bolts.framework */; };
+		4D00AB781B741FFB00DDD8CE /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D00AB721B741FFB00DDD8CE /* Parse.framework */; };
+		4D00AB791B741FFB00DDD8CE /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D00AB731B741FFB00DDD8CE /* ParseCrashReporting.framework */; };
+		4D00AB7B1B741FFB00DDD8CE /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D00AB751B741FFB00DDD8CE /* ParseFacebookUtilsV4.framework */; };
+		4D00AB7C1B741FFB00DDD8CE /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D00AB761B741FFB00DDD8CE /* ParseUI.framework */; };
+		4D00AB7E1B7427ED00DDD8CE /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D00AB7D1B7427ED00DDD8CE /* Accounts.framework */; };
+		4D00AB801B74280C00DDD8CE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D00AB7F1B74280C00DDD8CE /* AudioToolbox.framework */; };
+		4D00AB821B74281300DDD8CE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D00AB811B74281300DDD8CE /* CFNetwork.framework */; };
+		4D00AB841B74281C00DDD8CE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D00AB831B74281C00DDD8CE /* CoreGraphics.framework */; };
+		4D00AB861B74282600DDD8CE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D00AB851B74282600DDD8CE /* CoreLocation.framework */; };
+		4D00AB881B74282F00DDD8CE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D00AB871B74282F00DDD8CE /* QuartzCore.framework */; };
+		4D00AB8A1B74283600DDD8CE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D00AB891B74283600DDD8CE /* Security.framework */; };
+		4D00AB8C1B74283C00DDD8CE /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D00AB8B1B74283C00DDD8CE /* Social.framework */; };
+		4D00AB8E1B74284300DDD8CE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D00AB8D1B74284300DDD8CE /* StoreKit.framework */; };
+		4D00AB901B74285000DDD8CE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D00AB8F1B74284F00DDD8CE /* SystemConfiguration.framework */; };
+		4D00AB921B74285900DDD8CE /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D00AB911B74285900DDD8CE /* libz.dylib */; };
+		4D00AB941B74286200DDD8CE /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D00AB931B74286200DDD8CE /* libsqlite3.dylib */; };
+		4D00ABAF1B796CA800DDD8CE /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D00ABA91B796CA800DDD8CE /* Bolts.framework */; };
+		4D00ABB01B796CA800DDD8CE /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D00ABAA1B796CA800DDD8CE /* FBAudienceNetwork.framework */; };
+		4D00ABB11B796CA800DDD8CE /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D00ABAB1B796CA800DDD8CE /* FBSDKCoreKit.framework */; };
+		4D00ABB21B796CA800DDD8CE /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D00ABAC1B796CA800DDD8CE /* FBSDKLoginKit.framework */; };
+		4D00ABB31B796CA800DDD8CE /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D00ABAD1B796CA800DDD8CE /* FBSDKMessengerShareKit.framework */; };
+		4D00ABB41B796CA800DDD8CE /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D00ABAE1B796CA800DDD8CE /* FBSDKShareKit.framework */; };
+		4D0377811B8FD6C300EA1309 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0377801B8FD6C300EA1309 /* ChartView.swift */; };
+		4D0377841B8FE59B00EA1309 /* ChartElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0377831B8FE59B00EA1309 /* ChartElement.swift */; };
+		4D2F61CE1BC0BCB800C7790D /* InterfacePersonalDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2F61CD1BC0BCB800C7790D /* InterfacePersonalDetail.swift */; };
+		4D30E8141B34F5CD00C0EE33 /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D30E8081B34F5CD00C0EE33 /* CGFloat+Extensions.swift */; };
+		4D30E8151B34F5CD00C0EE33 /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D30E8091B34F5CD00C0EE33 /* CGPoint+Extensions.swift */; };
+		4D30E8161B34F5CD00C0EE33 /* CGVector+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D30E80A1B34F5CD00C0EE33 /* CGVector+Extensions.swift */; };
+		4D30E8171B34F5CD00C0EE33 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D30E80B1B34F5CD00C0EE33 /* Int+Extensions.swift */; };
+		4D30E8181B34F5CD00C0EE33 /* SKAction+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D30E80C1B34F5CD00C0EE33 /* SKAction+Extensions.swift */; };
+		4D30E8191B34F5CD00C0EE33 /* SKAction+SpecialEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D30E80D1B34F5CD00C0EE33 /* SKAction+SpecialEffects.swift */; };
+		4D30E81A1B34F5CD00C0EE33 /* SKColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D30E80E1B34F5CD00C0EE33 /* SKColor+Extensions.swift */; };
+		4D30E81B1B34F5CD00C0EE33 /* SKNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D30E80F1B34F5CD00C0EE33 /* SKNode+Extensions.swift */; };
+		4D30E81C1B34F5CD00C0EE33 /* SKTAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D30E8101B34F5CD00C0EE33 /* SKTAudio.swift */; };
+		4D30E81D1B34F5CD00C0EE33 /* SKTEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D30E8111B34F5CD00C0EE33 /* SKTEffects.swift */; };
+		4D30E81E1B34F5CD00C0EE33 /* SKTTimingFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D30E8121B34F5CD00C0EE33 /* SKTTimingFunctions.swift */; };
+		4D30E81F1B34F5CD00C0EE33 /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D30E8131B34F5CD00C0EE33 /* Vector3.swift */; };
+		4D30E8221B355D7B00C0EE33 /* SmokeBrake.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4D30E8201B355D7B00C0EE33 /* SmokeBrake.sks */; };
+		4D405CA21BBB648B007F802B /* InterfaceControllerGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D405CA11BBB648B007F802B /* InterfaceControllerGlobal.swift */; };
+		4D405CA41BBB648B007F802B /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D405CA31BBB648B007F802B /* NotificationController.swift */; };
+		4D405CA61BBB648B007F802B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D405CA51BBB648B007F802B /* Images.xcassets */; };
+		4D405CAA1BBB648B007F802B /* CatchTheSpeed WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 4D405CA91BBB648B007F802B /* CatchTheSpeed WatchKit App.app */; };
+		4D405CB21BBB648B007F802B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D405CB01BBB648B007F802B /* Interface.storyboard */; };
+		4D405CB41BBB648B007F802B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D405CB31BBB648B007F802B /* Images.xcassets */; };
+		4D405CB71BBB648B007F802B /* CatchTheSpeed WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4D405C9C1BBB648A007F802B /* CatchTheSpeed WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4D405CC01BBB6D77007F802B /* ChartRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D405CBF1BBB6D77007F802B /* ChartRowController.swift */; };
+		4D405CCA1BBB7AB8007F802B /* Blazed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D405CC61BBB7AB8007F802B /* Blazed.ttf */; };
+		4D405CCB1BBB7AB8007F802B /* Blazed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D405CC61BBB7AB8007F802B /* Blazed.ttf */; };
+		4D405CCC1BBB7AB8007F802B /* budmo-jiggler.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D405CC71BBB7AB8007F802B /* budmo-jiggler.ttf */; };
+		4D405CCD1BBB7AB8007F802B /* budmo-jiggler.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D405CC71BBB7AB8007F802B /* budmo-jiggler.ttf */; };
+		4D405CCE1BBB7AB8007F802B /* budmo-jigglish.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D405CC81BBB7AB8007F802B /* budmo-jigglish.ttf */; };
+		4D405CCF1BBB7AB8007F802B /* budmo-jigglish.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D405CC81BBB7AB8007F802B /* budmo-jigglish.ttf */; };
+		4D405CD01BBB7AB8007F802B /* Flame.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D405CC91BBB7AB8007F802B /* Flame.ttf */; };
+		4D405CD11BBB7AB8007F802B /* Flame.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D405CC91BBB7AB8007F802B /* Flame.ttf */; };
+		4D48B64B1BBCCD1500FE639F /* InterfaceControllerSoft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D48B64A1BBCCD1500FE639F /* InterfaceControllerSoft.swift */; };
+		4D57E6DB1B6E2BED00D74A84 /* risorse in Resources */ = {isa = PBXBuildFile; fileRef = 4D57E6DA1B6E2BED00D74A84 /* risorse */; };
+		4D57E6E31B6E301600D74A84 /* UtilityFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D57E6E21B6E301600D74A84 /* UtilityFunction.swift */; };
+		4D57E6E81B718DB900D74A84 /* Needle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D57E6E71B718DB900D74A84 /* Needle.swift */; };
+		4D57E6EA1B718E7D00D74A84 /* TimerCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D57E6E91B718E7D00D74A84 /* TimerCounter.swift */; };
+		4D57E6EC1B718EB500D74A84 /* CollisionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D57E6EB1B718EB500D74A84 /* CollisionSection.swift */; };
+		4D6A225C1BBCD817003E11EF /* InterfaceControllerStressing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A225B1BBCD817003E11EF /* InterfaceControllerStressing.swift */; };
+		4D6A225E1BBCD864003E11EF /* InterfaceControllerSurvival.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A225D1BBCD864003E11EF /* InterfaceControllerSurvival.swift */; };
+		4D6A22601BBCD87F003E11EF /* InterfaceControllerAstonishing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A225F1BBCD87F003E11EF /* InterfaceControllerAstonishing.swift */; };
+		4D6A22691BC0ADA0003E11EF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D6A22641BC0ADA0003E11EF /* Default-568h@2x.png */; };
+		4D6A226A1BC0ADA0003E11EF /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D6A22651BC0ADA0003E11EF /* Default-667h@2x.png */; };
+		4D6A226B1BC0ADA0003E11EF /* Default-Landscape-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D6A22661BC0ADA0003E11EF /* Default-Landscape-736h@3x.png */; };
+		4D6A226C1BC0ADA0003E11EF /* Default-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D6A22671BC0ADA0003E11EF /* Default-Portrait-736h@3x.png */; };
+		4D6A226D1BC0ADA0003E11EF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D6A22681BC0ADA0003E11EF /* Default@2x.png */; };
+		4D6E8E9A1BC3324800BDEE5E /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D6E8E991BC3324800BDEE5E /* images.xcassets */; };
+		4D7C28071B8F87DF00BBC8DA /* ChartCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C28061B8F87DF00BBC8DA /* ChartCustomCell.swift */; };
+		4DA9C5B61B445E6C001BDD9D /* MenuTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA9C5B51B445E6C001BDD9D /* MenuTable.swift */; };
+		4DCEC8021BC2050F0023AA35 /* face.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4DCEC8011BC2050F0023AA35 /* face.jpeg */; };
+		4DCEC8041BC206990023AA35 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D405CA51BBB648B007F802B /* Images.xcassets */; };
+		4DCEC8081BC20BFE0023AA35 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEC8071BC20BFE0023AA35 /* Utility.swift */; };
+		4DCEC80A1BC20E8A0023AA35 /* PersonalRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEC8091BC20E8A0023AA35 /* PersonalRowController.swift */; };
+		4DD1BC1D1AAE23650050B018 /* Speedo.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4DD1BC1C1AAE23650050B018 /* Speedo.sks */; };
+		4DD1BC1F1AAE23850050B018 /* Speedo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD1BC1E1AAE23850050B018 /* Speedo.swift */; };
+		EB22B0AA1A6BD2E000FED987 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB22B0A91A6BD2E000FED987 /* AppDelegate.swift */; };
+		EB22B0AC1A6BD2E000FED987 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB22B0AB1A6BD2E000FED987 /* ViewController.swift */; };
+		EB22B0AF1A6BD2E000FED987 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB22B0AD1A6BD2E000FED987 /* Main.storyboard */; };
+		EB22B0B41A6BD2E000FED987 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB22B0B21A6BD2E000FED987 /* LaunchScreen.xib */; };
+		EB22B0C01A6BD2E000FED987 /* CatchTheSpeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB22B0BF1A6BD2E000FED987 /* CatchTheSpeedTests.swift */; };
+		EB22B0CE1A6C1D5500FED987 /* AcceleratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB22B0CD1A6C1D5500FED987 /* AcceleratorView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D405CAB1BBB648B007F802B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB22B09C1A6BD2E000FED987 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D405CA81BBB648B007F802B;
+			remoteInfo = "CatchTheSpeed WatchKit App";
+		};
+		4D405CB51BBB648B007F802B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB22B09C1A6BD2E000FED987 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D405C9B1BBB648A007F802B;
+			remoteInfo = "CatchTheSpeed WatchKit Extension";
+		};
+		EB22B0BA1A6BD2E000FED987 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB22B09C1A6BD2E000FED987 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB22B0A31A6BD2E000FED987;
+			remoteInfo = CatchTheSpeed;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4D405CBE1BBB648B007F802B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4D405CB71BBB648B007F802B /* CatchTheSpeed WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4D00AB711B741FFB00DDD8CE /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		4D00AB721B741FFB00DDD8CE /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		4D00AB731B741FFB00DDD8CE /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		4D00AB751B741FFB00DDD8CE /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		4D00AB761B741FFB00DDD8CE /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		4D00AB7D1B7427ED00DDD8CE /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		4D00AB7F1B74280C00DDD8CE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4D00AB811B74281300DDD8CE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4D00AB831B74281C00DDD8CE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4D00AB851B74282600DDD8CE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4D00AB871B74282F00DDD8CE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4D00AB891B74283600DDD8CE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4D00AB8B1B74283C00DDD8CE /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		4D00AB8D1B74284300DDD8CE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		4D00AB8F1B74284F00DDD8CE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4D00AB911B74285900DDD8CE /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		4D00AB931B74286200DDD8CE /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		4D00ABA91B796CA800DDD8CE /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		4D00ABAA1B796CA800DDD8CE /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
+		4D00ABAB1B796CA800DDD8CE /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		4D00ABAC1B796CA800DDD8CE /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		4D00ABAD1B796CA800DDD8CE /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		4D00ABAE1B796CA800DDD8CE /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		4D00ABB61B796DF300DDD8CE /* CatchTheSpeed-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CatchTheSpeed-Bridging-Header.h"; sourceTree = "<group>"; };
+		4D0377801B8FD6C300EA1309 /* ChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		4D0377831B8FE59B00EA1309 /* ChartElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartElement.swift; sourceTree = "<group>"; };
+		4D2F61CD1BC0BCB800C7790D /* InterfacePersonalDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfacePersonalDetail.swift; sourceTree = "<group>"; };
+		4D30E8081B34F5CD00C0EE33 /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
+		4D30E8091B34F5CD00C0EE33 /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extensions.swift"; sourceTree = "<group>"; };
+		4D30E80A1B34F5CD00C0EE33 /* CGVector+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGVector+Extensions.swift"; sourceTree = "<group>"; };
+		4D30E80B1B34F5CD00C0EE33 /* Int+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		4D30E80C1B34F5CD00C0EE33 /* SKAction+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKAction+Extensions.swift"; sourceTree = "<group>"; };
+		4D30E80D1B34F5CD00C0EE33 /* SKAction+SpecialEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKAction+SpecialEffects.swift"; sourceTree = "<group>"; };
+		4D30E80E1B34F5CD00C0EE33 /* SKColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKColor+Extensions.swift"; sourceTree = "<group>"; };
+		4D30E80F1B34F5CD00C0EE33 /* SKNode+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKNode+Extensions.swift"; sourceTree = "<group>"; };
+		4D30E8101B34F5CD00C0EE33 /* SKTAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTAudio.swift; sourceTree = "<group>"; };
+		4D30E8111B34F5CD00C0EE33 /* SKTEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTEffects.swift; sourceTree = "<group>"; };
+		4D30E8121B34F5CD00C0EE33 /* SKTTimingFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTTimingFunctions.swift; sourceTree = "<group>"; };
+		4D30E8131B34F5CD00C0EE33 /* Vector3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
+		4D30E8201B355D7B00C0EE33 /* SmokeBrake.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SmokeBrake.sks; sourceTree = "<group>"; };
+		4D405C9C1BBB648A007F802B /* CatchTheSpeed WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CatchTheSpeed WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D405C9F1BBB648B007F802B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D405CA01BBB648B007F802B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		4D405CA11BBB648B007F802B /* InterfaceControllerGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceControllerGlobal.swift; sourceTree = "<group>"; };
+		4D405CA31BBB648B007F802B /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		4D405CA51BBB648B007F802B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4D405CA91BBB648B007F802B /* CatchTheSpeed WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CatchTheSpeed WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D405CAF1BBB648B007F802B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D405CB11BBB648B007F802B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		4D405CB31BBB648B007F802B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4D405CBF1BBB6D77007F802B /* ChartRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartRowController.swift; sourceTree = "<group>"; };
+		4D405CC61BBB7AB8007F802B /* Blazed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Blazed.ttf; sourceTree = "<group>"; };
+		4D405CC71BBB7AB8007F802B /* budmo-jiggler.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "budmo-jiggler.ttf"; sourceTree = "<group>"; };
+		4D405CC81BBB7AB8007F802B /* budmo-jigglish.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "budmo-jigglish.ttf"; sourceTree = "<group>"; };
+		4D405CC91BBB7AB8007F802B /* Flame.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Flame.ttf; sourceTree = "<group>"; };
+		4D48B64A1BBCCD1500FE639F /* InterfaceControllerSoft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceControllerSoft.swift; sourceTree = "<group>"; };
+		4D57E6DA1B6E2BED00D74A84 /* risorse */ = {isa = PBXFileReference; lastKnownFileType = folder; path = risorse; sourceTree = "<group>"; };
+		4D57E6E21B6E301600D74A84 /* UtilityFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityFunction.swift; sourceTree = "<group>"; };
+		4D57E6E71B718DB900D74A84 /* Needle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Needle.swift; sourceTree = "<group>"; };
+		4D57E6E91B718E7D00D74A84 /* TimerCounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerCounter.swift; sourceTree = "<group>"; };
+		4D57E6EB1B718EB500D74A84 /* CollisionSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollisionSection.swift; sourceTree = "<group>"; };
+		4D6A225B1BBCD817003E11EF /* InterfaceControllerStressing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceControllerStressing.swift; sourceTree = "<group>"; };
+		4D6A225D1BBCD864003E11EF /* InterfaceControllerSurvival.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceControllerSurvival.swift; sourceTree = "<group>"; };
+		4D6A225F1BBCD87F003E11EF /* InterfaceControllerAstonishing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceControllerAstonishing.swift; sourceTree = "<group>"; };
+		4D6A22641BC0ADA0003E11EF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4D6A22651BC0ADA0003E11EF /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
+		4D6A22661BC0ADA0003E11EF /* Default-Landscape-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape-736h@3x.png"; sourceTree = "<group>"; };
+		4D6A22671BC0ADA0003E11EF /* Default-Portrait-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait-736h@3x.png"; sourceTree = "<group>"; };
+		4D6A22681BC0ADA0003E11EF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		4D6E8E991BC3324800BDEE5E /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = images.xcassets; path = CatchTheSpeed/images.xcassets; sourceTree = "<group>"; };
+		4D7C28061B8F87DF00BBC8DA /* ChartCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartCustomCell.swift; sourceTree = "<group>"; };
+		4DA9C5B51B445E6C001BDD9D /* MenuTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTable.swift; sourceTree = "<group>"; };
+		4DCEC8011BC2050F0023AA35 /* face.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = face.jpeg; sourceTree = "<group>"; };
+		4DCEC8071BC20BFE0023AA35 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		4DCEC8091BC20E8A0023AA35 /* PersonalRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalRowController.swift; sourceTree = "<group>"; };
+		4DD1BC1C1AAE23650050B018 /* Speedo.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Speedo.sks; sourceTree = "<group>"; };
+		4DD1BC1E1AAE23850050B018 /* Speedo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speedo.swift; sourceTree = "<group>"; };
+		EB22B0A41A6BD2E000FED987 /* CatchTheSpeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatchTheSpeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB22B0A81A6BD2E000FED987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB22B0A91A6BD2E000FED987 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB22B0AB1A6BD2E000FED987 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EB22B0AE1A6BD2E000FED987 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB22B0B31A6BD2E000FED987 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		EB22B0B91A6BD2E000FED987 /* CatchTheSpeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatchTheSpeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB22B0BE1A6BD2E000FED987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB22B0BF1A6BD2E000FED987 /* CatchTheSpeedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchTheSpeedTests.swift; sourceTree = "<group>"; };
+		EB22B0CD1A6C1D5500FED987 /* AcceleratorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcceleratorView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D405C991BBB648A007F802B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB22B0A11A6BD2E000FED987 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D00AB941B74286200DDD8CE /* libsqlite3.dylib in Frameworks */,
+				4D00ABAF1B796CA800DDD8CE /* Bolts.framework in Frameworks */,
+				4D00AB921B74285900DDD8CE /* libz.dylib in Frameworks */,
+				4D00ABB01B796CA800DDD8CE /* FBAudienceNetwork.framework in Frameworks */,
+				4D00ABB11B796CA800DDD8CE /* FBSDKCoreKit.framework in Frameworks */,
+				4D00AB901B74285000DDD8CE /* SystemConfiguration.framework in Frameworks */,
+				4D00ABB31B796CA800DDD8CE /* FBSDKMessengerShareKit.framework in Frameworks */,
+				4D00AB8E1B74284300DDD8CE /* StoreKit.framework in Frameworks */,
+				4D00ABB41B796CA800DDD8CE /* FBSDKShareKit.framework in Frameworks */,
+				4D00AB8C1B74283C00DDD8CE /* Social.framework in Frameworks */,
+				4D00ABB21B796CA800DDD8CE /* FBSDKLoginKit.framework in Frameworks */,
+				4D00AB8A1B74283600DDD8CE /* Security.framework in Frameworks */,
+				4D00AB881B74282F00DDD8CE /* QuartzCore.framework in Frameworks */,
+				4D00AB861B74282600DDD8CE /* CoreLocation.framework in Frameworks */,
+				4D00AB841B74281C00DDD8CE /* CoreGraphics.framework in Frameworks */,
+				4D00AB821B74281300DDD8CE /* CFNetwork.framework in Frameworks */,
+				4D00AB801B74280C00DDD8CE /* AudioToolbox.framework in Frameworks */,
+				4D00AB7E1B7427ED00DDD8CE /* Accounts.framework in Frameworks */,
+				4D00AB7C1B741FFB00DDD8CE /* ParseUI.framework in Frameworks */,
+				4D00AB781B741FFB00DDD8CE /* Parse.framework in Frameworks */,
+				4D00AB791B741FFB00DDD8CE /* ParseCrashReporting.framework in Frameworks */,
+				4D00AB771B741FFB00DDD8CE /* Bolts.framework in Frameworks */,
+				4D00AB7B1B741FFB00DDD8CE /* ParseFacebookUtilsV4.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB22B0B61A6BD2E000FED987 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D00AB701B741FFB00DDD8CE /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				4D00AB711B741FFB00DDD8CE /* Bolts.framework */,
+				4D00AB721B741FFB00DDD8CE /* Parse.framework */,
+				4D00AB731B741FFB00DDD8CE /* ParseCrashReporting.framework */,
+				4D00AB751B741FFB00DDD8CE /* ParseFacebookUtilsV4.framework */,
+				4D00AB761B741FFB00DDD8CE /* ParseUI.framework */,
+			);
+			name = Parse;
+			path = "parse-library-1";
+			sourceTree = "<group>";
+		};
+		4D00AB951B74286900DDD8CE /* SystemLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				4D00AB931B74286200DDD8CE /* libsqlite3.dylib */,
+				4D00AB911B74285900DDD8CE /* libz.dylib */,
+				4D00AB8F1B74284F00DDD8CE /* SystemConfiguration.framework */,
+				4D00AB8D1B74284300DDD8CE /* StoreKit.framework */,
+				4D00AB8B1B74283C00DDD8CE /* Social.framework */,
+				4D00AB891B74283600DDD8CE /* Security.framework */,
+				4D00AB871B74282F00DDD8CE /* QuartzCore.framework */,
+				4D00AB851B74282600DDD8CE /* CoreLocation.framework */,
+				4D00AB831B74281C00DDD8CE /* CoreGraphics.framework */,
+				4D00AB811B74281300DDD8CE /* CFNetwork.framework */,
+				4D00AB7F1B74280C00DDD8CE /* AudioToolbox.framework */,
+				4D00AB7D1B7427ED00DDD8CE /* Accounts.framework */,
+			);
+			name = SystemLibrary;
+			sourceTree = "<group>";
+		};
+		4D00ABA51B775CD000DDD8CE /* Bridging */ = {
+			isa = PBXGroup;
+			children = (
+				4D00ABB61B796DF300DDD8CE /* CatchTheSpeed-Bridging-Header.h */,
+			);
+			name = Bridging;
+			sourceTree = "<group>";
+		};
+		4D00ABB51B796CAD00DDD8CE /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				4D00ABA91B796CA800DDD8CE /* Bolts.framework */,
+				4D00ABAA1B796CA800DDD8CE /* FBAudienceNetwork.framework */,
+				4D00ABAB1B796CA800DDD8CE /* FBSDKCoreKit.framework */,
+				4D00ABAC1B796CA800DDD8CE /* FBSDKLoginKit.framework */,
+				4D00ABAD1B796CA800DDD8CE /* FBSDKMessengerShareKit.framework */,
+				4D00ABAE1B796CA800DDD8CE /* FBSDKShareKit.framework */,
+			);
+			name = Facebook;
+			sourceTree = "<group>";
+		};
+		4D0377821B8FE57800EA1309 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D0377831B8FE59B00EA1309 /* ChartElement.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4D30E7EF1B34F58B00C0EE33 /* SKTUtils */ = {
+			isa = PBXGroup;
+			children = (
+				4D30E8081B34F5CD00C0EE33 /* CGFloat+Extensions.swift */,
+				4D30E8091B34F5CD00C0EE33 /* CGPoint+Extensions.swift */,
+				4D30E80A1B34F5CD00C0EE33 /* CGVector+Extensions.swift */,
+				4D30E80B1B34F5CD00C0EE33 /* Int+Extensions.swift */,
+				4D30E80C1B34F5CD00C0EE33 /* SKAction+Extensions.swift */,
+				4D30E80D1B34F5CD00C0EE33 /* SKAction+SpecialEffects.swift */,
+				4D30E80E1B34F5CD00C0EE33 /* SKColor+Extensions.swift */,
+				4D30E80F1B34F5CD00C0EE33 /* SKNode+Extensions.swift */,
+				4D30E8101B34F5CD00C0EE33 /* SKTAudio.swift */,
+				4D30E8111B34F5CD00C0EE33 /* SKTEffects.swift */,
+				4D30E8121B34F5CD00C0EE33 /* SKTTimingFunctions.swift */,
+				4D30E8131B34F5CD00C0EE33 /* Vector3.swift */,
+			);
+			name = SKTUtils;
+			sourceTree = "<group>";
+		};
+		4D405C9D1BBB648B007F802B /* CatchTheSpeed WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4D6A22611BBCDA5A003E11EF /* classes */,
+				4D405CD31BBB7B47007F802B /* risorse */,
+				4D405CA31BBB648B007F802B /* NotificationController.swift */,
+				4D405CA51BBB648B007F802B /* Images.xcassets */,
+				4D405C9E1BBB648B007F802B /* Supporting Files */,
+			);
+			path = "CatchTheSpeed WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		4D405C9E1BBB648B007F802B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D405C9F1BBB648B007F802B /* Info.plist */,
+				4D405CA01BBB648B007F802B /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4D405CAD1BBB648B007F802B /* CatchTheSpeed WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				4D405CB01BBB648B007F802B /* Interface.storyboard */,
+				4D405CB31BBB648B007F802B /* Images.xcassets */,
+				4D405CAE1BBB648B007F802B /* Supporting Files */,
+			);
+			path = "CatchTheSpeed WatchKit App";
+			sourceTree = "<group>";
+		};
+		4D405CAE1BBB648B007F802B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D405CAF1BBB648B007F802B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4D405CD31BBB7B47007F802B /* risorse */ = {
+			isa = PBXGroup;
+			children = (
+				4DCEC8031BC205180023AA35 /* general */,
+				4D405CD41BBB7B52007F802B /* font */,
+			);
+			name = risorse;
+			sourceTree = "<group>";
+		};
+		4D405CD41BBB7B52007F802B /* font */ = {
+			isa = PBXGroup;
+			children = (
+				4D405CC61BBB7AB8007F802B /* Blazed.ttf */,
+				4D405CC71BBB7AB8007F802B /* budmo-jiggler.ttf */,
+				4D405CC81BBB7AB8007F802B /* budmo-jigglish.ttf */,
+				4D405CC91BBB7AB8007F802B /* Flame.ttf */,
+			);
+			name = font;
+			sourceTree = "<group>";
+		};
+		4D57E6D21B62B45500D74A84 /* old */ = {
+			isa = PBXGroup;
+			children = (
+				EB22B0CD1A6C1D5500FED987 /* AcceleratorView.swift */,
+			);
+			name = old;
+			sourceTree = "<group>";
+		};
+		4D57E6E41B6E303E00D74A84 /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				4D57E6E21B6E301600D74A84 /* UtilityFunction.swift */,
+			);
+			name = utility;
+			sourceTree = "<group>";
+		};
+		4D57E6E61B718D9A00D74A84 /* Speedo */ = {
+			isa = PBXGroup;
+			children = (
+				4DD1BC1E1AAE23850050B018 /* Speedo.swift */,
+				4D57E6E71B718DB900D74A84 /* Needle.swift */,
+				4D57E6E91B718E7D00D74A84 /* TimerCounter.swift */,
+				4D57E6EB1B718EB500D74A84 /* CollisionSection.swift */,
+			);
+			name = Speedo;
+			sourceTree = "<group>";
+		};
+		4D6A22611BBCDA5A003E11EF /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				4DCEC8061BC20BE10023AA35 /* utillity */,
+				4D6A22621BBCDA6C003E11EF /* controller */,
+			);
+			name = classes;
+			sourceTree = "<group>";
+		};
+		4D6A22621BBCDA6C003E11EF /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				4D405CA11BBB648B007F802B /* InterfaceControllerGlobal.swift */,
+				4D48B64A1BBCCD1500FE639F /* InterfaceControllerSoft.swift */,
+				4D6A225B1BBCD817003E11EF /* InterfaceControllerStressing.swift */,
+				4D6A225D1BBCD864003E11EF /* InterfaceControllerSurvival.swift */,
+				4D6A225F1BBCD87F003E11EF /* InterfaceControllerAstonishing.swift */,
+				4D2F61CD1BC0BCB800C7790D /* InterfacePersonalDetail.swift */,
+				4D405CBF1BBB6D77007F802B /* ChartRowController.swift */,
+				4DCEC8091BC20E8A0023AA35 /* PersonalRowController.swift */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		4D8456041B13D109007269B8 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				4D0377821B8FE57800EA1309 /* Model */,
+				4D00ABA51B775CD000DDD8CE /* Bridging */,
+				4D57E6E61B718D9A00D74A84 /* Speedo */,
+				4D57E6E41B6E303E00D74A84 /* utility */,
+				4D30E7EF1B34F58B00C0EE33 /* SKTUtils */,
+				EB22B0AB1A6BD2E000FED987 /* ViewController.swift */,
+				4DA9C5B51B445E6C001BDD9D /* MenuTable.swift */,
+				4D7C28061B8F87DF00BBC8DA /* ChartCustomCell.swift */,
+				4D0377801B8FD6C300EA1309 /* ChartView.swift */,
+			);
+			name = classes;
+			sourceTree = "<group>";
+		};
+		4D8456061B166296007269B8 /* spritekit */ = {
+			isa = PBXGroup;
+			children = (
+				4DD1BC1C1AAE23650050B018 /* Speedo.sks */,
+				4D30E8201B355D7B00C0EE33 /* SmokeBrake.sks */,
+			);
+			name = spritekit;
+			sourceTree = "<group>";
+		};
+		4DCEC8031BC205180023AA35 /* general */ = {
+			isa = PBXGroup;
+			children = (
+				4DCEC8011BC2050F0023AA35 /* face.jpeg */,
+			);
+			name = general;
+			sourceTree = "<group>";
+		};
+		4DCEC8061BC20BE10023AA35 /* utillity */ = {
+			isa = PBXGroup;
+			children = (
+				4DCEC8071BC20BFE0023AA35 /* Utility.swift */,
+			);
+			name = utillity;
+			sourceTree = "<group>";
+		};
+		EB22B09B1A6BD2E000FED987 = {
+			isa = PBXGroup;
+			children = (
+				4D6E8E991BC3324800BDEE5E /* images.xcassets */,
+				EB22B0A61A6BD2E000FED987 /* CatchTheSpeed */,
+				EB22B0BC1A6BD2E000FED987 /* CatchTheSpeedTests */,
+				4D405C9D1BBB648B007F802B /* CatchTheSpeed WatchKit Extension */,
+				4D405CAD1BBB648B007F802B /* CatchTheSpeed WatchKit App */,
+				EB22B0A51A6BD2E000FED987 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB22B0A51A6BD2E000FED987 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB22B0A41A6BD2E000FED987 /* CatchTheSpeed.app */,
+				EB22B0B91A6BD2E000FED987 /* CatchTheSpeedTests.xctest */,
+				4D405C9C1BBB648A007F802B /* CatchTheSpeed WatchKit Extension.appex */,
+				4D405CA91BBB648B007F802B /* CatchTheSpeed WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB22B0A61A6BD2E000FED987 /* CatchTheSpeed */ = {
+			isa = PBXGroup;
+			children = (
+				4D00ABB51B796CAD00DDD8CE /* Facebook */,
+				4D00AB951B74286900DDD8CE /* SystemLibrary */,
+				4D00AB701B741FFB00DDD8CE /* Parse */,
+				4D57E6DA1B6E2BED00D74A84 /* risorse */,
+				4D57E6D21B62B45500D74A84 /* old */,
+				4D8456061B166296007269B8 /* spritekit */,
+				4D8456041B13D109007269B8 /* classes */,
+				EB22B0A91A6BD2E000FED987 /* AppDelegate.swift */,
+				EB22B0AD1A6BD2E000FED987 /* Main.storyboard */,
+				EB22B0B21A6BD2E000FED987 /* LaunchScreen.xib */,
+				EB22B0A71A6BD2E000FED987 /* Supporting Files */,
+			);
+			path = CatchTheSpeed;
+			sourceTree = "<group>";
+		};
+		EB22B0A71A6BD2E000FED987 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D6A22641BC0ADA0003E11EF /* Default-568h@2x.png */,
+				4D6A22651BC0ADA0003E11EF /* Default-667h@2x.png */,
+				4D6A22661BC0ADA0003E11EF /* Default-Landscape-736h@3x.png */,
+				4D6A22671BC0ADA0003E11EF /* Default-Portrait-736h@3x.png */,
+				4D6A22681BC0ADA0003E11EF /* Default@2x.png */,
+				EB22B0A81A6BD2E000FED987 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB22B0BC1A6BD2E000FED987 /* CatchTheSpeedTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB22B0BF1A6BD2E000FED987 /* CatchTheSpeedTests.swift */,
+				EB22B0BD1A6BD2E000FED987 /* Supporting Files */,
+			);
+			path = CatchTheSpeedTests;
+			sourceTree = "<group>";
+		};
+		EB22B0BD1A6BD2E000FED987 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB22B0BE1A6BD2E000FED987 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D405C9B1BBB648A007F802B /* CatchTheSpeed WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D405CBD1BBB648B007F802B /* Build configuration list for PBXNativeTarget "CatchTheSpeed WatchKit Extension" */;
+			buildPhases = (
+				4D405C981BBB648A007F802B /* Sources */,
+				4D405C991BBB648A007F802B /* Frameworks */,
+				4D405C9A1BBB648A007F802B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D405CAC1BBB648B007F802B /* PBXTargetDependency */,
+			);
+			name = "CatchTheSpeed WatchKit Extension";
+			productName = "CatchTheSpeed WatchKit Extension";
+			productReference = 4D405C9C1BBB648A007F802B /* CatchTheSpeed WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		4D405CA81BBB648B007F802B /* CatchTheSpeed WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D405CBC1BBB648B007F802B /* Build configuration list for PBXNativeTarget "CatchTheSpeed WatchKit App" */;
+			buildPhases = (
+				4D405CA71BBB648B007F802B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CatchTheSpeed WatchKit App";
+			productName = "CatchTheSpeed WatchKit App";
+			productReference = 4D405CA91BBB648B007F802B /* CatchTheSpeed WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+		EB22B0A31A6BD2E000FED987 /* CatchTheSpeed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB22B0C31A6BD2E000FED987 /* Build configuration list for PBXNativeTarget "CatchTheSpeed" */;
+			buildPhases = (
+				EB22B0A01A6BD2E000FED987 /* Sources */,
+				EB22B0A11A6BD2E000FED987 /* Frameworks */,
+				EB22B0A21A6BD2E000FED987 /* Resources */,
+				4D405CBE1BBB648B007F802B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D405CB61BBB648B007F802B /* PBXTargetDependency */,
+			);
+			name = CatchTheSpeed;
+			productName = CatchTheSpeed;
+			productReference = EB22B0A41A6BD2E000FED987 /* CatchTheSpeed.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB22B0B81A6BD2E000FED987 /* CatchTheSpeedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB22B0C61A6BD2E000FED987 /* Build configuration list for PBXNativeTarget "CatchTheSpeedTests" */;
+			buildPhases = (
+				EB22B0B51A6BD2E000FED987 /* Sources */,
+				EB22B0B61A6BD2E000FED987 /* Frameworks */,
+				EB22B0B71A6BD2E000FED987 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB22B0BB1A6BD2E000FED987 /* PBXTargetDependency */,
+			);
+			name = CatchTheSpeedTests;
+			productName = CatchTheSpeedTests;
+			productReference = EB22B0B91A6BD2E000FED987 /* CatchTheSpeedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB22B09C1A6BD2E000FED987 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = YeApp;
+				TargetAttributes = {
+					4D405C9B1BBB648A007F802B = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					4D405CA81BBB648B007F802B = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					EB22B0A31A6BD2E000FED987 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					EB22B0B81A6BD2E000FED987 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = EB22B0A31A6BD2E000FED987;
+					};
+				};
+			};
+			buildConfigurationList = EB22B09F1A6BD2E000FED987 /* Build configuration list for PBXProject "CatchTheSpeed" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB22B09B1A6BD2E000FED987;
+			productRefGroup = EB22B0A51A6BD2E000FED987 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB22B0A31A6BD2E000FED987 /* CatchTheSpeed */,
+				EB22B0B81A6BD2E000FED987 /* CatchTheSpeedTests */,
+				4D405C9B1BBB648A007F802B /* CatchTheSpeed WatchKit Extension */,
+				4D405CA81BBB648B007F802B /* CatchTheSpeed WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D405C9A1BBB648A007F802B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DCEC8021BC2050F0023AA35 /* face.jpeg in Resources */,
+				4D405CCA1BBB7AB8007F802B /* Blazed.ttf in Resources */,
+				4D405CCE1BBB7AB8007F802B /* budmo-jigglish.ttf in Resources */,
+				4D405CCC1BBB7AB8007F802B /* budmo-jiggler.ttf in Resources */,
+				4D405CAA1BBB648B007F802B /* CatchTheSpeed WatchKit App.app in Resources */,
+				4D405CD01BBB7AB8007F802B /* Flame.ttf in Resources */,
+				4D405CA61BBB648B007F802B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D405CA71BBB648B007F802B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D405CCB1BBB7AB8007F802B /* Blazed.ttf in Resources */,
+				4D405CCD1BBB7AB8007F802B /* budmo-jiggler.ttf in Resources */,
+				4D405CB21BBB648B007F802B /* Interface.storyboard in Resources */,
+				4D405CB41BBB648B007F802B /* Images.xcassets in Resources */,
+				4D405CD11BBB7AB8007F802B /* Flame.ttf in Resources */,
+				4D405CCF1BBB7AB8007F802B /* budmo-jigglish.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB22B0A21A6BD2E000FED987 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB22B0AF1A6BD2E000FED987 /* Main.storyboard in Resources */,
+				4DD1BC1D1AAE23650050B018 /* Speedo.sks in Resources */,
+				4D6A226D1BC0ADA0003E11EF /* Default@2x.png in Resources */,
+				4D6A226C1BC0ADA0003E11EF /* Default-Portrait-736h@3x.png in Resources */,
+				4DCEC8041BC206990023AA35 /* Images.xcassets in Resources */,
+				4D6A226A1BC0ADA0003E11EF /* Default-667h@2x.png in Resources */,
+				EB22B0B41A6BD2E000FED987 /* LaunchScreen.xib in Resources */,
+				4D57E6DB1B6E2BED00D74A84 /* risorse in Resources */,
+				4D6A226B1BC0ADA0003E11EF /* Default-Landscape-736h@3x.png in Resources */,
+				4D6E8E9A1BC3324800BDEE5E /* images.xcassets in Resources */,
+				4D30E8221B355D7B00C0EE33 /* SmokeBrake.sks in Resources */,
+				4D6A22691BC0ADA0003E11EF /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB22B0B71A6BD2E000FED987 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D405C981BBB648A007F802B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D2F61CE1BC0BCB800C7790D /* InterfacePersonalDetail.swift in Sources */,
+				4D6A225C1BBCD817003E11EF /* InterfaceControllerStressing.swift in Sources */,
+				4D6A22601BBCD87F003E11EF /* InterfaceControllerAstonishing.swift in Sources */,
+				4D405CA41BBB648B007F802B /* NotificationController.swift in Sources */,
+				4D48B64B1BBCCD1500FE639F /* InterfaceControllerSoft.swift in Sources */,
+				4D6A225E1BBCD864003E11EF /* InterfaceControllerSurvival.swift in Sources */,
+				4DCEC80A1BC20E8A0023AA35 /* PersonalRowController.swift in Sources */,
+				4DCEC8081BC20BFE0023AA35 /* Utility.swift in Sources */,
+				4D405CC01BBB6D77007F802B /* ChartRowController.swift in Sources */,
+				4D405CA21BBB648B007F802B /* InterfaceControllerGlobal.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB22B0A01A6BD2E000FED987 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D57E6E81B718DB900D74A84 /* Needle.swift in Sources */,
+				4D57E6E31B6E301600D74A84 /* UtilityFunction.swift in Sources */,
+				4D30E81E1B34F5CD00C0EE33 /* SKTTimingFunctions.swift in Sources */,
+				EB22B0CE1A6C1D5500FED987 /* AcceleratorView.swift in Sources */,
+				4D30E8161B34F5CD00C0EE33 /* CGVector+Extensions.swift in Sources */,
+				4D30E8151B34F5CD00C0EE33 /* CGPoint+Extensions.swift in Sources */,
+				4D30E8141B34F5CD00C0EE33 /* CGFloat+Extensions.swift in Sources */,
+				EB22B0AC1A6BD2E000FED987 /* ViewController.swift in Sources */,
+				4D30E81C1B34F5CD00C0EE33 /* SKTAudio.swift in Sources */,
+				4D57E6EC1B718EB500D74A84 /* CollisionSection.swift in Sources */,
+				4D57E6EA1B718E7D00D74A84 /* TimerCounter.swift in Sources */,
+				4D7C28071B8F87DF00BBC8DA /* ChartCustomCell.swift in Sources */,
+				EB22B0AA1A6BD2E000FED987 /* AppDelegate.swift in Sources */,
+				4D30E81B1B34F5CD00C0EE33 /* SKNode+Extensions.swift in Sources */,
+				4D30E8181B34F5CD00C0EE33 /* SKAction+Extensions.swift in Sources */,
+				4DA9C5B61B445E6C001BDD9D /* MenuTable.swift in Sources */,
+				4D30E8191B34F5CD00C0EE33 /* SKAction+SpecialEffects.swift in Sources */,
+				4D0377841B8FE59B00EA1309 /* ChartElement.swift in Sources */,
+				4DD1BC1F1AAE23850050B018 /* Speedo.swift in Sources */,
+				4D30E81D1B34F5CD00C0EE33 /* SKTEffects.swift in Sources */,
+				4D30E8171B34F5CD00C0EE33 /* Int+Extensions.swift in Sources */,
+				4D30E81F1B34F5CD00C0EE33 /* Vector3.swift in Sources */,
+				4D30E81A1B34F5CD00C0EE33 /* SKColor+Extensions.swift in Sources */,
+				4D0377811B8FD6C300EA1309 /* ChartView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB22B0B51A6BD2E000FED987 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB22B0C01A6BD2E000FED987 /* CatchTheSpeedTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D405CAC1BBB648B007F802B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D405CA81BBB648B007F802B /* CatchTheSpeed WatchKit App */;
+			targetProxy = 4D405CAB1BBB648B007F802B /* PBXContainerItemProxy */;
+		};
+		4D405CB61BBB648B007F802B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D405C9B1BBB648A007F802B /* CatchTheSpeed WatchKit Extension */;
+			targetProxy = 4D405CB51BBB648B007F802B /* PBXContainerItemProxy */;
+		};
+		EB22B0BB1A6BD2E000FED987 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB22B0A31A6BD2E000FED987 /* CatchTheSpeed */;
+			targetProxy = EB22B0BA1A6BD2E000FED987 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4D405CB01BBB648B007F802B /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D405CB11BBB648B007F802B /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		EB22B0AD1A6BD2E000FED987 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB22B0AE1A6BD2E000FED987 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB22B0B21A6BD2E000FED987 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB22B0B31A6BD2E000FED987 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4D405CB81BBB648B007F802B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CatchTheSpeed WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4D405CB91BBB648B007F802B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "CatchTheSpeed WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4D405CBA1BBB648B007F802B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = CatchTheSpeed_WatchKit_Extension;
+				INFOPLIST_FILE = "CatchTheSpeed WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		4D405CBB1BBB648B007F802B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = CatchTheSpeed_WatchKit_Extension;
+				INFOPLIST_FILE = "CatchTheSpeed WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		EB22B0C11A6BD2E000FED987 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB22B0C21A6BD2E000FED987 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB22B0C41A6BD2E000FED987 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CatchTheSpeed/parse-library-1",
+					/Users/powered/project/Framework/IOS/FacebookSDK,
+					"$(PROJECT_DIR)/CatchTheSpeed",
+				);
+				INFOPLIST_FILE = CatchTheSpeed/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CatchTheSpeed/CatchTheSpeed-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB22B0C51A6BD2E000FED987 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CatchTheSpeed/parse-library-1",
+					/Users/powered/project/Framework/IOS/FacebookSDK,
+					"$(PROJECT_DIR)/CatchTheSpeed",
+				);
+				INFOPLIST_FILE = CatchTheSpeed/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CatchTheSpeed/CatchTheSpeed-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		EB22B0C71A6BD2E000FED987 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CatchTheSpeedTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatchTheSpeed.app/CatchTheSpeed";
+			};
+			name = Debug;
+		};
+		EB22B0C81A6BD2E000FED987 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CatchTheSpeedTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatchTheSpeed.app/CatchTheSpeed";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D405CBC1BBB648B007F802B /* Build configuration list for PBXNativeTarget "CatchTheSpeed WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D405CBA1BBB648B007F802B /* Debug */,
+				4D405CBB1BBB648B007F802B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D405CBD1BBB648B007F802B /* Build configuration list for PBXNativeTarget "CatchTheSpeed WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D405CB81BBB648B007F802B /* Debug */,
+				4D405CB91BBB648B007F802B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB22B09F1A6BD2E000FED987 /* Build configuration list for PBXProject "CatchTheSpeed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB22B0C11A6BD2E000FED987 /* Debug */,
+				EB22B0C21A6BD2E000FED987 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB22B0C31A6BD2E000FED987 /* Build configuration list for PBXNativeTarget "CatchTheSpeed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB22B0C41A6BD2E000FED987 /* Debug */,
+				EB22B0C51A6BD2E000FED987 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB22B0C61A6BD2E000FED987 /* Build configuration list for PBXNativeTarget "CatchTheSpeedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB22B0C71A6BD2E000FED987 /* Debug */,
+				EB22B0C81A6BD2E000FED987 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB22B09C1A6BD2E000FED987 /* Project object */;
+}

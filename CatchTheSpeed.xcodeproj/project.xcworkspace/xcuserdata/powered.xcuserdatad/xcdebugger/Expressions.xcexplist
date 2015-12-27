@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "CatchTheSpeed.Speedo.(standardInit in _97ABCC22153E89B026DBAB321E25AEBA) (CatchTheSpeed.Speedo)() -&gt; ():Speedo.swift">
+      </ContextState>
+      <ContextState
+         contextName = "CatchTheSpeed.Speedo.getReferenceAngleValue (CatchTheSpeed.Speedo)() -&gt; (min : Swift.Double, max : Swift.Double):Speedo.swift">
+      </ContextState>
+      <ContextState
+         contextName = "CatchTheSpeed.Speedo.enableYellowSection (CatchTheSpeed.Speedo)(Swift.Int) -&gt; ():Speedo.swift">
+      </ContextState>
+      <ContextState
+         contextName = "CatchTheSpeed.ViewController.(calcAngleOnLevel in _370CF1D3B9FCA36DFF12E462391561B2) (CatchTheSpeed.ViewController)() -&gt; ():ViewController.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

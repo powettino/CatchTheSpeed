@@ -26,11 +26,11 @@ class InterfaceControllerAstonishing: WKInterfaceController {
     
     internal func getChart(){
         
-        var params = ["game_type":InterfaceControllerGlobal.ModeGame.astonishing.rawValue]
-        var error : NSError?
-        var whereClause = (NSString(data: NSJSONSerialization.dataWithJSONObject(params, options: nil, error: &error)!, encoding: NSUTF8StringEncoding))?.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())
+//        var params = ["game_type":InterfaceControllerGlobal.ModeGame.astonishing.rawValue]
+//        var error : NSError?
+//        var whereClause = (NSString(data: NSJSONSerialization.dataWithJSONObject(params, options: nil)!, encoding: NSUTF8StringEncoding))?.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())
         
-        var urlReq = Utility.prepareRestRequest("https://api.parse.com/1/classes/Points?order=-score&limit=10&include=user&where=\(whereClause!)")
+        var urlReq = Utility.prepareRestRequest("https://api.parse.com/1/classes/Points?order=-score&limit=10&include=user&where=\(InterfaceControllerGlobal.ModeGame.astonishing.rawValue)")
         
         urlReq.addValue("application/json", forHTTPHeaderField: "Content-Type")
         urlReq.addValue("application/json", forHTTPHeaderField: "Accept")
@@ -55,11 +55,11 @@ class InterfaceControllerAstonishing: WKInterfaceController {
         // This method is called when watch view controller is about to be visible to user
         self.chart.setNumberOfRows(self.infoArray.count, withRowType: "ChartRowController")
         
-        for (index, singleRes) in enumerate(self.infoArray){
+        for (index, singleRes) in (self.infoArray).enumerate(){
             if let row = self.chart.rowControllerAtIndex(index) as? ChartRowController {
-                var chartInfo : NSDictionary = singleRes as! NSDictionary
-                var user : NSDictionary = (chartInfo["user"] as? NSDictionary)!
-                var level : String = chartInfo["level"] as! String
+                let chartInfo : NSDictionary = singleRes as! NSDictionary
+                let user : NSDictionary = (chartInfo["user"] as? NSDictionary)!
+                let level : String = chartInfo["level"] as! String
                 row.setInfo(String(index+1), playerName: user["name"] as! String, actualPoints: String(chartInfo["score"] as! Int), gameMod: "Level: \(level)")
 
             }

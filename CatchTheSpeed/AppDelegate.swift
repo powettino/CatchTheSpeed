@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
-    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
         return  FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
         
     }
@@ -49,18 +49,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     
-    //Per Iwatch
-    func application(application: UIApplication,
-        handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?,
-        reply: (([NSObject : AnyObject]!) -> Void)!) {
-            let umi = NSUserDefaults.standardUserDefaults().objectForKey("userMinimalInformation") as? String
-            if let userId = umi {
-                reply(["userId" : userId])
-            }else{
-                reply([:])
-            }
-    }
-    
+    //Per Iwatch1
+//    func application(application: UIApplication,
+//        handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?,
+//        reply: (([NSObject : AnyObject]!) -> Void)!) {
+//            let umi = NSUserDefaults.standardUserDefaults().objectForKey("userMinimalInformation") as? String
+//            if let userId = umi {
+//                reply(["userId" : userId])
+//            }else{
+//                reply([:])
+//            }
+//    }
     
 }
 

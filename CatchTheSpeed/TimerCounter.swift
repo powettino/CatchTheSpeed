@@ -44,7 +44,7 @@ struct TimerCounter{
     }
     
     mutating func startCounter(){
-        var block1 = SKAction.sequence([
+        let block1 = SKAction.sequence([
             SKAction.animateWithTextures([
                 SKTexture(imageNamed: "risorse/speedo/numbers/number6.png")],
                 timePerFrame: self.fire),
@@ -68,7 +68,7 @@ struct TimerCounter{
                 timePerFrame: self.fire*10)
             ])
         
-        var block2 = SKAction.sequence([
+        let block2 = SKAction.sequence([
             SKAction.animateWithTextures([
                 SKTexture(imageNamed: "risorse/speedo/numbers/number0.png")],
                 timePerFrame: self.fire),

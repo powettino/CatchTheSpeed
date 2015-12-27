@@ -9,7 +9,7 @@
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.yeapp.CatchTheSpeed.watchkitextension</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -32,11 +32,11 @@
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.watchkit</string>
 	</dict>
+	<key>RemoteInterfacePrincipalClass</key>
+	<string>$(PRODUCT_MODULE_NAME).InterfaceController</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>risorse/fonts/Blazed.ttf</string>
 	</array>
-	<key>RemoteInterfacePrincipalClass</key>
-	<string>$(PRODUCT_MODULE_NAME).InterfaceController</string>
 </dict>
 </plist>

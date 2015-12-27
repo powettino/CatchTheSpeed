@@ -32,7 +32,7 @@ struct CollisionSection {
     }
     
     mutating func updateNodes(){
-        var pathToDraw = CGPathCreateMutable()
+        let pathToDraw = CGPathCreateMutable()
         
         CGPathMoveToPoint(pathToDraw, nil, centerPoint.x, centerPoint.y)
         CGPathAddArc(pathToDraw, nil, centerPoint.x, centerPoint.y, referenceAngles.radius, referenceAngles.angles.max, referenceAngles.angles.min, true);
@@ -45,9 +45,9 @@ struct CollisionSection {
         collisionShape!.glowWidth = 0.6
         collisionShape!.fillColor = SKColor.orangeColor().colorWithAlphaComponent(0.6);
         
-        var offset : CGFloat = 0;
-        var punto = UtilityFunction.Math.findXY(referenceAngles.radius-offset, centerX: centerPoint.x, centerY: centerPoint.y, angle: referenceAngles.angles.max);
-        var corda = (2  * (referenceAngles.radius-offset)) * (sin(referenceAngles.angles.dim/2));
+        let offset : CGFloat = 0;
+        let punto = UtilityFunction.Math.findXY(referenceAngles.radius-offset, centerX: centerPoint.x, centerY: centerPoint.y, angle: referenceAngles.angles.max);
+        let corda = (2  * (referenceAngles.radius-offset)) * (sin(referenceAngles.angles.dim/2));
         
         /*
         TODO: Per evidenziare la zone di collisione commentare la riga sotto e decommentare quella con
@@ -72,13 +72,13 @@ struct CollisionSection {
         
         // si applica una correzione di 90 gradi dovuta agli assi del piano di presentazione
         // NSLog("Calcolo dai punti di riferimento: \(minDegreeAngle+90) - \(maxDegreeAngle+90)");
-        var fixedAngles : (min: Double, max: Double) = (minDegreeAngle + 90, maxDegreeAngle + 90)
+        let fixedAngles : (min: Double, max: Double) = (minDegreeAngle + 90, maxDegreeAngle + 90)
         var dimensionAngle = (fixedAngles.max - fixedAngles.min) / Double((level + 7))
         
         //NSLog("Dimensione angolo: \(dimensionAngle) - minimo: \( fixedAngles.min )");
         dimensionAngle = dimensionAngle < minSectionDimension ? minSectionDimension : dimensionAngle;
         
-        var rnd: Double = UtilityFunction.Math.randomDouble( (fixedAngles.min + dimensionAngle),  max: (fixedAngles.max))
+        let rnd: Double = UtilityFunction.Math.randomDouble( (fixedAngles.min + dimensionAngle),  max: (fixedAngles.max))
         //NSLog("Punto random: \(rnd)");
         
         return ( UtilityFunction.Math.degreesToRadiant(rnd), UtilityFunction.Math.degreesToRadiant(rnd-dimensionAngle), UtilityFunction.Math.degreesToRadiant(dimensionAngle));

@@ -8,8 +8,9 @@
 
 import Foundation
 import WatchKit
+import WatchConnectivity
 
-class InterfacePersonalDetail: WKInterfaceController {
+class InterfacePersonalDetail: WKInterfaceController, WCSessionDelegate {
     
     @IBOutlet weak var group1: WKInterfaceGroup!
     
@@ -20,12 +21,26 @@ class InterfacePersonalDetail: WKInterfaceController {
     
     var infoArray : NSArray = []
     
+    var session = WCSession();
+    
     override func awakeWithContext(context: AnyObject?) {
         self.noUser.setText("No user logged")
         self.group1.setCornerRadius(10)
+        
+        session.sendMessage(message: ["request": "refreshData"], replyHandler: {
+            (replyInfo, error) -> Void in
+            let result = replyInfo["userId"] as? String
+            self.switchView(true)
+            if let userId : String = result {
+                if (!userId.isEmpty){
+                    self.switchView(false)
+                    self.getUserChart(userId)
+                }
+            }}, errorHandler: nil)
+            
         WKInterfaceController.openParentApplication(["request": "refreshData"],
             reply: { (replyInfo, error) -> Void in
-                var result = replyInfo["userId"] as? String
+                let result = replyInfo["userId"] as? String
                 self.switchView(true)
                 if let userId : String = result {
                     if (!userId.isEmpty){
@@ -44,7 +59,7 @@ class InterfacePersonalDetail: WKInterfaceController {
     
     internal func getUserChart(userId : String){
         
-        println("userid: \(userId)")
+        print("userid: \(userId)")
         var urlReq = Utility.prepareRestRequest("https://api.parse.com/1/users/\(userId)")
         
         let queue:NSOperationQueue = NSOperationQueue()
@@ -67,7 +82,7 @@ class InterfacePersonalDetail: WKInterfaceController {
                 }
             }else{
                 self.noUser.setText("No connection available")
-                println("adadad")
+                print("adadad")
                 self.switchView(true)
             }
             
@@ -88,7 +103,7 @@ class InterfacePersonalDetail: WKInterfaceController {
             
             self.infoArray = jsonResult["results"] as! NSArray
             self.infoTable.setNumberOfRows(self.infoArray.count, withRowType: "PersonalRowController")
-            for (index, singleRes) in enumerate(self.infoArray){
+            for (index, singleRes) in (self.infoArray).enumerate(){
                 if let row = self.infoTable.rowControllerAtIndex(index) as? PersonalRowController {
                     var chartInfo : NSDictionary = singleRes as! NSDictionary
                     row.setInfo(String(chartInfo["score"] as! Int), gameMod: InterfaceControllerGlobal.ModeGame(rawValue: (chartInfo["game_type"] as! Int))!.toString(), level: chartInfo["level"] as! String)
@@ -103,6 +118,11 @@ class InterfacePersonalDetail: WKInterfaceController {
     
     override func willActivate() {
         super.willActivate()
+        if (WCSession.isSupported()){
+            session = WCSession.defaultSession()
+            session.delegate = self
+            session.activateSession()
+        }
     }
     override func didDeactivate() {
         super.didDeactivate()

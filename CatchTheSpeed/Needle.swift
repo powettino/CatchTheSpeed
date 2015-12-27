@@ -43,8 +43,8 @@ struct Needle{
         movementAngles.max = UtilityFunction.Math.degreesToRadiant(maxAngle)
         rotating = false;
         
-        var colliderWidth : CGFloat = 10;
-        var colliderHeight : CGFloat = 10;
+        let colliderWidth : CGFloat = 10;
+        let colliderHeight : CGFloat = 10;
         
         /*TODO: Per evidenziare il nodo di collisione commentare la riga sotto e decommentare la riga con
         il colore rosso nel nodo di collisione
@@ -52,7 +52,7 @@ struct Needle{
         colliderNode = SKSpriteNode(color: UIColor.clearColor(), size: CGSize(width: colliderWidth, height: colliderHeight))
         //colliderNode = SKSpriteNode(color: UIColor.redColor(), size: CGSize(width: colliderWidth, height: colliderHeight))
         colliderNode!.name = name+"Collider";
-        var punto = UtilityFunction.Math.findXY(maxH , centerX: posX, centerY: posY, angle: UtilityFunction.Math.degreesToRadiant(90));
+        let punto = UtilityFunction.Math.findXY(maxH , centerX: posX, centerY: posY, angle: UtilityFunction.Math.degreesToRadiant(90));
         colliderNode!.position = CGPoint(x: punto.x-spriteNode!.position.x, y: punto.y - spriteNode!.position.y)
         colliderNode!.zPosition = posZ;
         //            colliderNode!.physicsBody = SKPhysicsBody(circleOfRadius: colliderWidth/2 - 7)
@@ -84,7 +84,7 @@ struct Needle{
     mutating func startRotation(){
         let forwardRotation = SKAction.rotateToAngle(movementAngles.min, duration: speed.rawValue, shortestUnitArc: false);
         let backwardRotation = SKAction.rotateToAngle(movementAngles.max, duration: speed.rawValue, shortestUnitArc: false);
-        var seq = SKAction.sequence([forwardRotation, backwardRotation]);
+        let seq = SKAction.sequence([forwardRotation, backwardRotation]);
         spriteNode?.runAction(
             SKAction.repeatActionForever(seq)
             , withKey: rotationLabel

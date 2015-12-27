@@ -39,7 +39,7 @@ class InterfaceControllerGlobal: WKInterfaceController {
             }else{
                 self.noUser.setHidden(false)
                 self.chart.setHidden(true)
-                println("\(error.localizedDescription)")
+                print("\(error.localizedDescription)")
             }
         })
     }
@@ -70,10 +70,10 @@ class InterfaceControllerGlobal: WKInterfaceController {
         // This method is called when watch view controller is about to be visible to user
         self.chart.setNumberOfRows(self.infoArray.count, withRowType: "ChartRowController")
         
-        for (index, singleRes) in enumerate(self.infoArray){
+        for (index, singleRes) in (self.infoArray).enumerate(){
             if let row = self.chart.rowControllerAtIndex(index) as? ChartRowController {
-                var chartInfo : NSDictionary = singleRes as! NSDictionary
-                var user : NSDictionary = (chartInfo["user"] as? NSDictionary)!
+                let chartInfo : NSDictionary = singleRes as! NSDictionary
+                let user : NSDictionary = (chartInfo["user"] as? NSDictionary)!
                 row.setInfo(String(index+1), playerName: user["name"] as! String, actualPoints: String(chartInfo["score"] as! Int), gameMod: ModeGame(rawValue: (chartInfo["game_type"] as! Int))!.toString())
             }
         }

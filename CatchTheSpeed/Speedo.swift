@@ -144,7 +144,7 @@ class Speedo : SKScene{
     //questa funziona sovrascrive l'aggiornamento dell'oggetto spritekit
     //per aggiornare la collisione tra i due oggetti
     override func update(currentTime: NSTimeInterval) {
-        var intersecato = self.needle.colliderNode!.intersectsNode(self.collisionSection.colliderNode!);
+        let intersecato = self.needle.colliderNode!.intersectsNode(self.collisionSection.colliderNode!);
         if(intersecato && !self.colliso){
             self.colliso = true;
         }
@@ -153,7 +153,7 @@ class Speedo : SKScene{
         }
     }
     
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         if(self.running){
             if (            self.needle!.isRotating()){
                 if(self.colliso){
@@ -216,7 +216,7 @@ class Speedo : SKScene{
     }
     
     func animateText(text : String?){
-        if let emitter = self.childNodeWithName(self.smokeNodeName) {
+        if let _ = self.childNodeWithName(self.smokeNodeName) {
             NSLog("Skip emitter")
         }else{
             
@@ -224,16 +224,16 @@ class Speedo : SKScene{
                 self.label.text = tempText
             }
             
-            var originalPosition = self.label.position
+            let originalPosition = self.label.position
             
-            var midPoint = CGPointMake(self.centerX, self.centerY+50)
-            var startingPoint = CGPointMake(-self.label.frame.width-10, self.centerY+50)
-            var endingPoint = CGPointMake(self.size.width+self.label.frame.width+10, self.label.position.y)
+            let midPoint = CGPointMake(self.centerX, self.centerY+50)
+            let startingPoint = CGPointMake(-self.label.frame.width-10, self.centerY+50)
+            let endingPoint = CGPointMake(self.size.width+self.label.frame.width+10, self.label.position.y)
             
-            var inc = SKTMoveEffect(node: self.label, duration: 0.8, startPosition: startingPoint, endPosition:midPoint)
+            let inc = SKTMoveEffect(node: self.label, duration: 0.8, startPosition: startingPoint, endPosition:midPoint)
             inc.timingFunction = SKTTimingFunctionBackEaseOut
             
-            var out = SKTMoveEffect(node: self.label, duration: 0.8, startPosition: self.label.position, endPosition: endingPoint)
+            let out = SKTMoveEffect(node: self.label, duration: 0.8, startPosition: self.label.position, endPosition: endingPoint)
             out.timingFunction = SKTTimingFunctionBackEaseIn
             
             self.label.runAction(SKAction.sequence([
@@ -244,14 +244,14 @@ class Speedo : SKScene{
                     self.label.text = self.labelStandardText
             });
             
-            var smokeEmitter = SKEmitterNode(fileNamed: "SmokeBrake");
-            smokeEmitter.particleTexture = SKTexture(imageNamed: "risorse/visual_effects/spark.png")
-            smokeEmitter.name = self.smokeNodeName
-            smokeEmitter.position = CGPointMake(self.centerX+(self.label.frame.width/2), self.centerY+50)
+            let smokeEmitter = SKEmitterNode(fileNamed: "SmokeBrake");
+            smokeEmitter!.particleTexture = SKTexture(imageNamed: "risorse/visual_effects/spark.png")
+            smokeEmitter!.name = self.smokeNodeName
+            smokeEmitter!.position = CGPointMake(self.centerX+(self.label.frame.width/2), self.centerY+50)
             
-            self.runAction(SKAction.waitForDuration(0.3), completion: {self.addChild(smokeEmitter)});
+            self.runAction(SKAction.waitForDuration(0.3), completion: {self.addChild(smokeEmitter!)});
             self.runAction(SKAction.waitForDuration(2), completion:{
-                smokeEmitter.removeFromParent();
+                smokeEmitter!.removeFromParent();
             });
         }
     }

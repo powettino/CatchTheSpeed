@@ -82,13 +82,6 @@ class UtilityFunction{
         }
     }
     class Coding{
-        static func iterateTupleWithResultBlock<C,R>(t:C, block:(String,Any)->R) {
-            let mirror = reflect(t)
-            for i in 0..<mirror.count {
-                block(mirror[i].0, mirror[i].1.value)
-            }
-        }
-        
         static func compare <T:Equatable> (tuple1:(T,T),tuple2:(T,T)) -> Bool
         {
             return (tuple1.0 == tuple2.0) && (tuple1.1 == tuple2.1)
@@ -100,7 +93,7 @@ class UtilityFunction{
         static var loadingArray = [Int : UIView]()
         
         static func showAlertWithContent(presenterView: UIViewController, title: String, message: String, preferredStyle: UIAlertControllerStyle, actions:[UIAlertAction], animated: Bool, completion: (() -> Void)?){
-            var genericAlert = UIAlertController(title: title, message: message, preferredStyle: preferredStyle)
+            let genericAlert = UIAlertController(title: title, message: message, preferredStyle: preferredStyle)
             for action in actions{
                 genericAlert.addAction(action)
             }
@@ -143,12 +136,15 @@ class UtilityFunction{
         
         static func hideActivityIndicator(view: UIView, tag: Int) {
 //            println("rimossso spinner con id \(tag)")
-            var loadingBox = loadingArray.removeValueForKey(tag)
+            let loadingBox = loadingArray.removeValueForKey(tag)
             loadingBox?.removeFromSuperview()
         }
         
         static func removeAllSubviews(view: UIView){
-            view.subviews.map({$0.removeFromSuperview()})
+            for sub in view.subviews{
+                sub.removeFromSuperview()
+            }
+//            view.subviews.map({$0.removeFromSuperview()})
         }
     }
     
@@ -208,14 +204,14 @@ class UtilityFunction{
     
     class Imaging{
         static func cropImage(image: UIImage, cropRect: CGRect) -> UIImage{
-            var imageRef : CGImageRef = CGImageCreateWithImageInRect(image.CGImage, cropRect)
-            let img : UIImage = UIImage(CGImage: imageRef)!
+            let imageRef : CGImageRef = CGImageCreateWithImageInRect(image.CGImage, cropRect)!
+            let img : UIImage = UIImage(CGImage: imageRef)
             return img
         }
         
         static func takeScreenShot(view: UIView, cropRect : CGRect?) -> UIImage{
             UIGraphicsBeginImageContext(view.frame.size)
-            view.layer.renderInContext(UIGraphicsGetCurrentContext())
+            view.layer.renderInContext(UIGraphicsGetCurrentContext()!)
             var image : UIImage = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext()
             //            var postImage = UIImage(named: "\(image)")
@@ -229,13 +225,15 @@ class UtilityFunction{
     
     class Audio{
         static func setupAudioPlayerWithFile(file:NSString, type:NSString) -> AVAudioPlayer  {
-            var path = NSBundle.mainBundle().pathForResource(file as String, ofType: type as String)
-            var url = NSURL.fileURLWithPath(path!)
-            
-            var error: NSError?
+            let path = NSBundle.mainBundle().pathForResource(file as String, ofType: type as String)
+            let url = NSURL.fileURLWithPath(path!)
             
             var audioPlayer:AVAudioPlayer?
-            audioPlayer = AVAudioPlayer(contentsOfURL: url, error: &error)
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOfURL: url)
+            } catch{
+                audioPlayer = nil
+            }
             
             return audioPlayer!
         }

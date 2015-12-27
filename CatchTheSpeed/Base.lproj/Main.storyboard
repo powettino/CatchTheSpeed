@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="6UQ-7P-TyN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="6UQ-7P-TyN">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Blazed.ttf">
@@ -250,7 +251,7 @@
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="CatchTheSpeed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="64" width="320" height="519"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="LKd-a9-fJx">
@@ -409,7 +410,7 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="enE-Gg-J6l"/>
                         <barButtonItem key="leftBarButtonItem" id="EzE-tu-iXC">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KnK-1g-we8">
-                                <rect key="frame" x="-23" y="-15" width="71" height="30"/>
+                                <rect key="frame" x="16" y="7" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Options">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -500,7 +501,7 @@
                                                     <size key="shadowOffset" width="-2" height="2"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="level" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oyy-n7-XWG">
-                                                    <rect key="frame" x="124.00000043476794" y="50" width="104" height="21"/>
+                                                    <rect key="frame" x="124" y="50" width="104" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
                                                     <fontDescription key="fontDescription" name="BudmoJiggler-Regular" family="Budmo" pointSize="13"/>
                                                     <color key="textColor" red="0.91764705879999997" green="0.98431372549999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -527,7 +528,7 @@
                                                     <size key="shadowOffset" width="-2" height="2"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mod" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Flh-dp-8ig">
-                                                    <rect key="frame" x="124.00000043476794" y="28" width="104" height="21"/>
+                                                    <rect key="frame" x="124" y="28" width="104" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
                                                     <fontDescription key="fontDescription" name="BudmoJiggler-Regular" family="Budmo" pointSize="13"/>
                                                     <color key="textColor" red="0.91764705879999997" green="0.98431372549999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -646,9 +647,4 @@
             <point key="canvasLocation" x="-400" y="-97"/>
         </scene>
     </scenes>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>

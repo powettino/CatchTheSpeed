@@ -49,10 +49,8 @@
 		4D405CA21BBB648B007F802B /* InterfaceControllerGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D405CA11BBB648B007F802B /* InterfaceControllerGlobal.swift */; };
 		4D405CA41BBB648B007F802B /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D405CA31BBB648B007F802B /* NotificationController.swift */; };
 		4D405CA61BBB648B007F802B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D405CA51BBB648B007F802B /* Images.xcassets */; };
-		4D405CAA1BBB648B007F802B /* CatchTheSpeed WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 4D405CA91BBB648B007F802B /* CatchTheSpeed WatchKit App.app */; };
 		4D405CB21BBB648B007F802B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D405CB01BBB648B007F802B /* Interface.storyboard */; };
 		4D405CB41BBB648B007F802B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D405CB31BBB648B007F802B /* Images.xcassets */; };
-		4D405CB71BBB648B007F802B /* CatchTheSpeed WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4D405C9C1BBB648A007F802B /* CatchTheSpeed WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4D405CC01BBB6D77007F802B /* ChartRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D405CBF1BBB6D77007F802B /* ChartRowController.swift */; };
 		4D405CCA1BBB7AB8007F802B /* Blazed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D405CC61BBB7AB8007F802B /* Blazed.ttf */; };
 		4D405CCB1BBB7AB8007F802B /* Blazed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D405CC61BBB7AB8007F802B /* Blazed.ttf */; };
@@ -85,23 +83,16 @@
 		4DCEC80A1BC20E8A0023AA35 /* PersonalRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEC8091BC20E8A0023AA35 /* PersonalRowController.swift */; };
 		4DD1BC1D1AAE23650050B018 /* Speedo.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4DD1BC1C1AAE23650050B018 /* Speedo.sks */; };
 		4DD1BC1F1AAE23850050B018 /* Speedo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD1BC1E1AAE23850050B018 /* Speedo.swift */; };
+		4DFCE30E1C2F88DD00ECA62E /* CatchTheSpeed WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4D405C9C1BBB648A007F802B /* CatchTheSpeed WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		EB22B0AA1A6BD2E000FED987 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB22B0A91A6BD2E000FED987 /* AppDelegate.swift */; };
 		EB22B0AC1A6BD2E000FED987 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB22B0AB1A6BD2E000FED987 /* ViewController.swift */; };
 		EB22B0AF1A6BD2E000FED987 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB22B0AD1A6BD2E000FED987 /* Main.storyboard */; };
 		EB22B0B41A6BD2E000FED987 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB22B0B21A6BD2E000FED987 /* LaunchScreen.xib */; };
 		EB22B0C01A6BD2E000FED987 /* CatchTheSpeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB22B0BF1A6BD2E000FED987 /* CatchTheSpeedTests.swift */; };
-		EB22B0CE1A6C1D5500FED987 /* AcceleratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB22B0CD1A6C1D5500FED987 /* AcceleratorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4D405CAB1BBB648B007F802B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EB22B09C1A6BD2E000FED987 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4D405CA81BBB648B007F802B;
-			remoteInfo = "CatchTheSpeed WatchKit App";
-		};
-		4D405CB51BBB648B007F802B /* PBXContainerItemProxy */ = {
+		4DFCE30C1C2F88DD00ECA62E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EB22B09C1A6BD2E000FED987 /* Project object */;
 			proxyType = 1;
@@ -118,15 +109,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		4D405CBE1BBB648B007F802B /* Embed App Extensions */ = {
+		4DFCE3121C2F88DD00ECA62E /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				4D405CB71BBB648B007F802B /* CatchTheSpeed WatchKit Extension.appex in Embed App Extensions */,
+				4DFCE30E1C2F88DD00ECA62E /* CatchTheSpeed WatchKit Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DFCE3131C2F88DD00ECA62E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -218,7 +219,6 @@
 		EB22B0B91A6BD2E000FED987 /* CatchTheSpeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatchTheSpeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB22B0BE1A6BD2E000FED987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB22B0BF1A6BD2E000FED987 /* CatchTheSpeedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchTheSpeedTests.swift; sourceTree = "<group>"; };
-		EB22B0CD1A6C1D5500FED987 /* AcceleratorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcceleratorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -408,14 +408,6 @@
 			name = font;
 			sourceTree = "<group>";
 		};
-		4D57E6D21B62B45500D74A84 /* old */ = {
-			isa = PBXGroup;
-			children = (
-				EB22B0CD1A6C1D5500FED987 /* AcceleratorView.swift */,
-			);
-			name = old;
-			sourceTree = "<group>";
-		};
 		4D57E6E41B6E303E00D74A84 /* utility */ = {
 			isa = PBXGroup;
 			children = (
@@ -530,7 +522,6 @@
 				4D00AB951B74286900DDD8CE /* SystemLibrary */,
 				4D00AB701B741FFB00DDD8CE /* Parse */,
 				4D57E6DA1B6E2BED00D74A84 /* risorse */,
-				4D57E6D21B62B45500D74A84 /* old */,
 				4D8456061B166296007269B8 /* spritekit */,
 				4D8456041B13D109007269B8 /* classes */,
 				EB22B0A91A6BD2E000FED987 /* AppDelegate.swift */,
@@ -585,27 +576,28 @@
 			buildRules = (
 			);
 			dependencies = (
-				4D405CAC1BBB648B007F802B /* PBXTargetDependency */,
 			);
 			name = "CatchTheSpeed WatchKit Extension";
 			productName = "CatchTheSpeed WatchKit Extension";
 			productReference = 4D405C9C1BBB648A007F802B /* CatchTheSpeed WatchKit Extension.appex */;
-			productType = "com.apple.product-type.watchkit-extension";
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 		4D405CA81BBB648B007F802B /* CatchTheSpeed WatchKit App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D405CBC1BBB648B007F802B /* Build configuration list for PBXNativeTarget "CatchTheSpeed WatchKit App" */;
 			buildPhases = (
 				4D405CA71BBB648B007F802B /* Resources */,
+				4DFCE3121C2F88DD00ECA62E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4DFCE30D1C2F88DD00ECA62E /* PBXTargetDependency */,
 			);
 			name = "CatchTheSpeed WatchKit App";
 			productName = "CatchTheSpeed WatchKit App";
 			productReference = 4D405CA91BBB648B007F802B /* CatchTheSpeed WatchKit App.app */;
-			productType = "com.apple.product-type.application.watchapp";
+			productType = "com.apple.product-type.application.watchapp2";
 		};
 		EB22B0A31A6BD2E000FED987 /* CatchTheSpeed */ = {
 			isa = PBXNativeTarget;
@@ -614,12 +606,11 @@
 				EB22B0A01A6BD2E000FED987 /* Sources */,
 				EB22B0A11A6BD2E000FED987 /* Frameworks */,
 				EB22B0A21A6BD2E000FED987 /* Resources */,
-				4D405CBE1BBB648B007F802B /* Embed App Extensions */,
+				4DFCE3131C2F88DD00ECA62E /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4D405CB61BBB648B007F802B /* PBXTargetDependency */,
 			);
 			name = CatchTheSpeed;
 			productName = CatchTheSpeed;
@@ -650,8 +641,9 @@
 		EB22B09C1A6BD2E000FED987 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0720;
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = YeApp;
 				TargetAttributes = {
 					4D405C9B1BBB648A007F802B = {
@@ -699,7 +691,6 @@
 				4D405CCA1BBB7AB8007F802B /* Blazed.ttf in Resources */,
 				4D405CCE1BBB7AB8007F802B /* budmo-jigglish.ttf in Resources */,
 				4D405CCC1BBB7AB8007F802B /* budmo-jiggler.ttf in Resources */,
-				4D405CAA1BBB648B007F802B /* CatchTheSpeed WatchKit App.app in Resources */,
 				4D405CD01BBB7AB8007F802B /* Flame.ttf in Resources */,
 				4D405CA61BBB648B007F802B /* Images.xcassets in Resources */,
 			);
@@ -771,7 +762,6 @@
 				4D57E6E81B718DB900D74A84 /* Needle.swift in Sources */,
 				4D57E6E31B6E301600D74A84 /* UtilityFunction.swift in Sources */,
 				4D30E81E1B34F5CD00C0EE33 /* SKTTimingFunctions.swift in Sources */,
-				EB22B0CE1A6C1D5500FED987 /* AcceleratorView.swift in Sources */,
 				4D30E8161B34F5CD00C0EE33 /* CGVector+Extensions.swift in Sources */,
 				4D30E8151B34F5CD00C0EE33 /* CGPoint+Extensions.swift in Sources */,
 				4D30E8141B34F5CD00C0EE33 /* CGFloat+Extensions.swift in Sources */,
@@ -806,15 +796,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4D405CAC1BBB648B007F802B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4D405CA81BBB648B007F802B /* CatchTheSpeed WatchKit App */;
-			targetProxy = 4D405CAB1BBB648B007F802B /* PBXContainerItemProxy */;
-		};
-		4D405CB61BBB648B007F802B /* PBXTargetDependency */ = {
+		4DFCE30D1C2F88DD00ECA62E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4D405C9B1BBB648A007F802B /* CatchTheSpeed WatchKit Extension */;
-			targetProxy = 4D405CB51BBB648B007F802B /* PBXContainerItemProxy */;
+			targetProxy = 4DFCE30C1C2F88DD00ECA62E /* PBXContainerItemProxy */;
 		};
 		EB22B0BB1A6BD2E000FED987 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -863,8 +848,12 @@
 				INFOPLIST_FILE = "CatchTheSpeed WatchKit Extension/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yeapp.CatchTheSpeed.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -877,8 +866,12 @@
 				INFOPLIST_FILE = "CatchTheSpeed WatchKit Extension/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yeapp.CatchTheSpeed.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -887,6 +880,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -894,11 +888,12 @@
 				);
 				IBSC_MODULE = CatchTheSpeed_WatchKit_Extension;
 				INFOPLIST_FILE = "CatchTheSpeed WatchKit App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yeapp.CatchTheSpeed.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -908,14 +903,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				IBSC_MODULE = CatchTheSpeed_WatchKit_Extension;
 				INFOPLIST_FILE = "CatchTheSpeed WatchKit App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yeapp.CatchTheSpeed.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -939,6 +936,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -953,7 +951,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -989,7 +987,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1010,6 +1008,7 @@
 				);
 				INFOPLIST_FILE = CatchTheSpeed/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yeapp.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CatchTheSpeed/CatchTheSpeed-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1030,6 +1029,7 @@
 				);
 				INFOPLIST_FILE = CatchTheSpeed/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yeapp.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CatchTheSpeed/CatchTheSpeed-Bridging-Header.h";
 			};
@@ -1049,6 +1049,7 @@
 				);
 				INFOPLIST_FILE = CatchTheSpeedTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yeapp.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatchTheSpeed.app/CatchTheSpeed";
 			};
@@ -1064,6 +1065,7 @@
 				);
 				INFOPLIST_FILE = CatchTheSpeedTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yeapp.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatchTheSpeed.app/CatchTheSpeed";
 			};

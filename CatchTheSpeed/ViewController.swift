@@ -1,4 +1,3 @@
-//
 //  ViewController.swift
 //  CatchTheSpeed
 //
@@ -208,7 +207,7 @@ class ViewController: UIViewController, ScoreDelegate, StartingActionDelegate, T
                     let email:String? = (loginResult["email"] as AnyObject? as? String)
                     
                     //                    let pictureURL = "https://graph.facebook.com/\(facebookID)/picture?type=large&return_ssl_resources=1"
-                    print(loginResult)
+//                    print(loginResult)
                     
                     let pictureURL = (loginResult["picture"]?.objectForKey("data")?.objectForKey("url") as! String)
                     
@@ -351,7 +350,7 @@ class ViewController: UIViewController, ScoreDelegate, StartingActionDelegate, T
             break;
         case (ModeGame.survival, "Survival"):
             break;
-        case (ModeGame.astonishing, "Astonishing!!") :
+        case (ModeGame.astonishing, "Astonishing") :
             break;
         case (ModeGame.soft, _):
             NSLog("Cambio modalita in soft");

@@ -153,9 +153,9 @@ class Speedo : SKScene{
         }
     }
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(touches: Set<UITouch>?, withEvent event: UIEvent?) {
         if(self.running){
-            if (            self.needle!.isRotating()){
+            if (self.needle!.isRotating()){
                 if(self.colliso){
                     self.colliso = false;
                     self.currentLevel++;
@@ -262,7 +262,7 @@ class Speedo : SKScene{
         }
         self.needle.startRotation();
         self.running=true;
-//        NSLog("velocita: \(self.needle.speed.rawValue)");
+        //        NSLog("velocita: \(self.needle.speed.rawValue)");
     }
     
     func stopSpeedo(){

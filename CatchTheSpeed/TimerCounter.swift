@@ -39,7 +39,7 @@ struct TimerCounter{
     
     mutating func restoreTimer(){
 //        println("llll  1 \(self.current)")
-        second1?.texture = SKTexture(imageNamed: "risorse/speedo/numbers/number"+String(self.current / 10)+".png");
+        self.second1?.texture = SKTexture(imageNamed: "risorse/speedo/numbers/number"+String(self.current / 10)+".png");
         self.second2?.texture = SKTexture(imageNamed: "risorse/speedo/numbers/number"+String(self.current % 10)+".png");
     }
     
@@ -73,10 +73,10 @@ struct TimerCounter{
                 SKTexture(imageNamed: "risorse/speedo/numbers/number0.png")],
                 timePerFrame: self.fire),
             SKAction.runBlock({
-                if(self.current==0){
-                    self.stopCounter()
-                    self.internalSpeedo.timerDelegate?.timerEnded();
-                }
+//                if(self.current==1){
+//                    self.stopCounter()
+//                    self.internalSpeedo.timerDelegate?.timerEnded();
+//                }
                 self.current--
             }),
             SKAction.animateWithTextures([
@@ -131,6 +131,10 @@ struct TimerCounter{
                 SKTexture(imageNamed: "risorse/speedo/numbers/number1.png")],
                 timePerFrame: self.fire),
             SKAction.runBlock({
+                if(self.current==1){
+                    self.stopCounter()
+                    self.internalSpeedo.timerDelegate?.timerEnded();
+                }
                 self.current--
             })
         ])
